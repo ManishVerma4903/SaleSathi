@@ -1,0 +1,30 @@
+{
+  "name": "shop-management-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "13.4.19",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "axios": "^1.6.7",
+    "recharts": "^2.10.0",
+    "react-hook-form": "^7.48.0",
+    "react-hot-toast": "^2.4.1",
+    "lucide-react": "^0.292.0",
+    "clsx": "^2.0.0",
+    "date-fns": "^2.30.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.5",
+    "postcss": "^8.4.31",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.53.0",
+    "eslint-config-next": "13.4.19"
+  }
+}
