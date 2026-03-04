@@ -2,7 +2,6 @@ const User = require('../models/User');
 const Product = require('../models/Product');
 const Sale = require('../models/Sale');
 const Expense = require('../models/Expense');
-const bcrypt = require('bcryptjs');
 const { asyncHandler, ApiError } = require('../middleware/errorMiddleware');
 
 /**
@@ -173,8 +172,7 @@ const updateUser = asyncHandler(async (req, res) => {
   if (shopName !== undefined) user.shopName = shopName;
   
   if (password) {
-    const salt = await bcrypt.genSalt(10);
-    user.password = await bcrypt.hash(password, salt);
+    user.password = password;
   }
 
   await user.save();
